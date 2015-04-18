@@ -2,6 +2,7 @@ package com.ldaniels528.commons.helpers
 
 import java.util.Properties
 
+import scala.collection.JavaConversions._
 import scala.collection.JavaConverters._
 
 /**
@@ -32,10 +33,15 @@ object PropertiesHelper {
       Option(props.get(key)) map (_.asInstanceOf[T])
     }
 
+    def getOrDie(key: String): String = {
+      Option(props.getProperty(key)).map(_.trim).getOrElse(throw new IllegalArgumentException(s"Required property '$key' was not found"))
+    }
+
     def getOrElse(key: String, default: => String): String = {
       Option(props.getProperty(key)).map(_.trim).getOrElse(default)
     }
 
+    def toMap: Map[String, String] = Map(props.toSeq: _*)
   }
 
 }

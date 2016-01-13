@@ -2,11 +2,11 @@ import sbt._
 
 name := "commons-helpers"
 
-organization := "com.ldaniels528"
+organization := "com.github.ldaniels528"
 
-version := "0.1.0"
+version := "0.1.1"
 
-scalaVersion := "2.11.6"
+scalaVersion := "2.11.7"
 
 scalacOptions ++= Seq("-deprecation", "-encoding", "UTF-8", "-feature", "-target:jvm-1.7", "-unchecked",
   "-Ywarn-adapted-args", "-Ywarn-value-discard", "-Xlint")

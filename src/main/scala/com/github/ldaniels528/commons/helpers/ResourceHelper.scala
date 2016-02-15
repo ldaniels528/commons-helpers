@@ -1,4 +1,4 @@
-package com.ldaniels528.commons.helpers
+package com.github.ldaniels528.commons.helpers
 
 import scala.language.reflectiveCalls
 

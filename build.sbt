@@ -4,7 +4,7 @@ name := "commons-helpers"
 
 organization := "com.github.ldaniels528"
 
-version := "0.1.1"
+version := "0.1.2"
 
 scalaVersion := "2.11.7"
 
@@ -20,7 +20,6 @@ libraryDependencies ++= Seq(
 
 // Testing Dependencies
 libraryDependencies ++= Seq(
-  "junit" % "junit" % "4.12" % "test",
   "org.mockito" % "mockito-all" % "1.10.19" % "test",
   "org.scalatest" %% "scalatest" % "2.2.3" % "test"
 )

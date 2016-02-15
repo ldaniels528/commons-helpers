@@ -1,6 +1,6 @@
-package com.ldaniels528.commons.helpers
+package com.github.ldaniels528.commons.helpers
 
-import com.ldaniels528.commons.helpers.StringHelper._
+import StringHelper._
 import org.scalatest.Matchers._
 import org.scalatest.mock.MockitoSugar
 import org.scalatest.{BeforeAndAfterEach, FeatureSpec, GivenWhenThen}
